@@ -1,6 +1,7 @@
 $('.carousel').carousel({
 	interval: false,
 });
+
 $(document).ready(function(){
 	"use strict";
 
@@ -129,4 +130,60 @@ $(document).ready(function(){
         });
 
 });	
+
+var contentPortalSCF = "Aplikasi Portal SCF digunakan untuk monitoring limit kerjasama SCF per korporat dan reporting performance SCF.";
+var contentECollection = "Aplikasi Mobile Collection digunakan untuk monitoring dan reporting aktivitas penagihan yang dilakukan oleh Field Collector.";
+var contentPortalDGO = "Aplikasi Portal DGO digunakan untuk percepatan proses hasil/resume rekonsiliasi dari Unit Rekonsiliasi sampai fungsi settlement ke unit pembayaran dalam rangka penyelesaian pembukuan.";
+var contentPosyanduLansia = "Aplikasi Posyandu Lansia digunakan untuk mempermudah kader posyandu dalam melakukan pencatatan data kesehatan lansia secara cepat dan lansia dapat melihat hasil pemeriksaan rutin setiap bulannya.";
+var contentDJPInterop = "Aplikasi DJP Interop digunakan sebagai pemenuhan permintaan data serta pencatatan dan pelaporan pajak kepada DJP.";
+var contentSKB = "Aplikasi SKB Online digunakan untuk mempermudah Unit Operasional dalam proses penerbitan SKB, proses otomasi layanan melalui Cabang dan Penyeragaman format penulisan SKB melalui Cabang/SKM/Divisi.";
+var contentDashboardHukum = "Aplikasi Dashboard Hukum digunakan untuk monitoring data historis perkara debitur, calon debitur dan/atau pihak ketiga di BNI.";
+
+const titlePortalSCF = "Portal SCF";
+const titleECollection = "E-Collection";
+const titlePortalDGO  = "Portal DGO";
+const titlePosyanduLansia= "Posyandu Lansia";
+const titleDJPInterop = "DJP Interop";
+const tittleSKB = "SKB Online";
+const titleDashboardHukum = "Dashboard Hukum";
+
+function openView(about){
+	if(about == 'portalscf'){
+		$("#modal-content").html(contentPortalSCF);
+		$("#exampleModalLongTitle").html(titlePortalSCF);
+
+	}
+	else if(about == 'ecollection'){
+		$("#modal-content").html(contentECollection);
+		$("#exampleModalLongTitle").html(titleECollection);
+
+	}
+	else if(about == 'portaldgo'){
+		$("#modal-content").html(contentPortalDGO);
+		$("#exampleModalLongTitle").html(titlePortalDGO);
+
+	}
+	else if(about == 'posyandulansia'){
+		$("#modal-content").html(contentPosyanduLansia);
+		$("#exampleModalLongTitle").html(titlePosyanduLansia);
+
+	}
+	else if(about == 'djpinterop'){
+		$("#modal-content").html(contentDJPInterop);
+		$("#exampleModalLongTitle").html(titleDJPInterop);
+
+	}
+	else if(about == 'skb'){
+		$("#modal-content").html(contentSKB);
+		$("#exampleModalLongTitle").html(tittleSKB);
+	}
+
+	else if(about == 'dashboardhukum'){
+		$("#modal-content").html(contentDashboardHukum);
+		$("#exampleModalLongTitle").html(titleDashboardHukum);
+
+	}
+	
+  };
+
 	
